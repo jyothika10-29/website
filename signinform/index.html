@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ca20cfd19d.js" crossorigin="anonymous"></script>
+    <title>Sign in</title>
+</head>
+<body>
+    <div class="container">
+        <img src="login background.jpg">
+      <div class="form-box">
+        <h1 id="title">Sign up</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="name">
+                <div class="input-field" id="emailField">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="email">
+                <div class="input-field" id="paswordField">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="password">
+                </div>
+                <p>Forgot password <a href="#" onclick="forgotPassword()">click here!</a></p>
+            </div>
+            <div class="btn-field">
+                <button type="button" id="signupBtn" >Sign Up</button>
+                <button type="button" id="signinBtn"  class="disable">Sign In</button>
+            </div>
+        </form>
+      </div>  
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

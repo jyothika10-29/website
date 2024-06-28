@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+</head>
+<style>
+    .body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    #circle{
+        width:1000px;
+        height:1000px;
+        position:absolute;
+        top:0;
+        left:0;
+        background: #ccc;
+        border-radius: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        transition: 1s;
+    }
+    .feature {
+        position: absolute;
+        text-align: center;
+        width: 200px;
+        transform-origin: center center;
+    }
+    
+    .feature img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .one {
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    
+    .two {
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+    
+    .three {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    
+    .four {
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%) rotate(270deg);
+    }
+    .feature h1, .feature p {
+        color:black;
+        margin: 10px 0;
+    }
+    .feature h1 {
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+    .feature p {
+        font-size: 1.2rem;
+    }
+    .controls{
+        position:absolute;
+        right:10%;
+        top:50%;
+        transform:translateY(-50%);
+        text-align: center;
+    }
+    .controls h3{
+        margin:15px;
+        color:#fff;
+    }
+    #UpBtn{
+        width:15px;
+        cursor:pointer;
+    }
+    #DownBtn{
+        width:15px;
+        cursor:pointer;
+    }
+.overlay{
+    width:0;
+    height:0;
+    border-top: 500px solid #fff;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    border-right: 500px solid transparent;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+</style>
+<body>
+    <div class="overlay"></div>
+<div id="circle" style="transform: rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg);">
+    <div class="feature one">
+        <img src="fitness.jpg">
+        <div>
+        <h1>Fitness</h1>
+        <p>Empowering Your Fitness Journey with Personalized Training & Community Support</p>
+        </div>
+    </div>
+    <div class="feature two">
+    <img src="yoga.jpg">
+    <div>
+        <h1>Yoga</h1>
+        <p>Transform Your Mind and Body with Our Expert-Led Yoga Classes</p>
+    </div>
+    </div>
+    <div class="feature three">
+        <img src="personaltraining.jpg">
+        <div>
+            <h1>Personal Training</h1>
+            <p>Achieve Your Fitness Goals with Customized Personal Training Programs</p>
+        </div>
+    </div>
+    <div class="feature four">
+        <img src="dance.jpg">
+        <div>
+            <h1>Dance</h1>
+            <p>Unleash Your Energy and Have Fun with Our Dynamic Dance Classes</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="controls">
+<img src="uparrow.png" id="UpBtn"> <a>CLICK HERE</a>
+<h1>PROGRAMS</h1>
+<img src="downarrowiamge.png" id="DownBtn"><a>CLICK HERE</a>
+</div>
+    </div>
+    <script>
+        var circle=document.getElementById("circle");
+        var UpBtn=document.getElementById("UpBtn");
+        var DownBtn=document.getElementById("DownBtn");
+        var rotateValue=circle.style.transform;
+        var rotateSum;
+        UpBtn.onclick=function(){
+            rotateSum=rotateValue+"rotate(90deg)";
+            circle.style.transform=rotateSum;
+            rotateValue=rotateSum;
+        }
+        DownBtn.onclick=function(){
+            rotateSum=rotateValue+"rotate(-90deg)";
+            circle.style.transform=rotateSum;
+            rotateValue=rotateSum;
+        }
+
+    </script>
+</body>
+</html>
+</body>
+</html>

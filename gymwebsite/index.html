@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------web page css-------------->
+    <link rel="stylesheet" href="assets\css\style.css">
+    <!-------------------Font awesome tools----------------------->
+    <script src="https://kit.fontawesome.com/ca20cfd19d.js" crossorigin="anonymous"></script>
+    <title>Elite Power Zone</title>
+</head>
+
+<body>
+    <!---------------HEADER-------------------->
+    <div class="nav">
+        <h2>Elite Power Zone</h2>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="item">
+            <div class="icon2">
+                <a href="signinform\index.html" target="_parent" onclick="signin()"><i class="fa-solid fa-user"></i>Sign
+                    In</a>
+            </div>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About-Us">About Us</a></li>
+            <li><a href="#Packages">Packages</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Contact">Contact</a></li>
+
+            <div class="icon">
+                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </div>
+
+            <!----------DARK LIGHT THEME TOGLE------------>
+            <div class="toggle">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <span class="ball"></span>
+                </label>
+            </div>
+        </ul>
+    </div>
+    <!------------HOME--------------->
+    <section id="Home">
+        <div class="backimage">
+            <div class="overlay"></div>
+        </div>
+        <div class="mid">
+            <p>Forge Your Power</p>
+            <h2>Join us and discover your true power through dedicated training</h2>
+            <div class="btn">
+                <a class="simple" href="programs/index.html" onclick="knowmore()">Know More</a>
+                <a class="border" href="#" onclick="joinus()">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <!------DETAILs----------->
+    <section id="About-Us">
+        <div class="details">
+            <div class="one">
+                <h4>Build a healthy Lifestyle</h4>
+                <h3>We believe in empowering you to reach your fitness goals through personalized training,
+                    state-of-the-art equipment, and a supportive community.</h3>
+                <h6>With years of experience and a commitment to continuous learning,our team provide the best practices
+                    in fitness and wellness.</h6>
+                <p> Join Us Today!<br>
+                    Ready to transform your life?<br>
+                    Become a member of Elite Power zone and start your fitness journey with us.<br>
+                    We offer flexible membership options and a free trial for new members.<br>
+                    Together, let's achieve greatness!</p>
+                <a href="#" onclick="member()">Become a member</a>
+            </div>
+            <div class="two">
+                <h3>Timings</h3>
+                <br>
+                <h5>We understand that everyone has different schedules, so we offer flexible timings to accommodate
+                    your needs:</h5>
+                <h5>Monday to Friday: <br></h5>
+                <p>5:00 AM - 10:00 PM<br></p>
+                <h5>Saturday:<br></h5>
+                <p>6:00 AM - 8:00 PM<br></p>
+                <h5>Sunday:<br></h5>
+                <p>7:00 AM - 6:00 PM<br></p>
+                <h5>Public Holidays:<br></h5>
+                <p>8:00 AM - 4:00 PM </p>
+            </div>
+        </div>
+    </section>
+    <!----------------PROGRAMS------------------->
+    <section id="Packages" class=" section clearfix">
+        <div class="packages">
+            <div class="about">
+                <h2>PACKAGES</h2>
+                <p>Membership:</p>
+                <h5>Provides access to gym facilities and basic equipment usage during regular hours.</h5>
+                <p>Premium Membership:</p>
+                <h5>Includes additional perks such as access to premium equipment, fitness classes.</h5>
+                <p>Personal Training Packages:</p>
+                <h5>Offers personalized fitness training sessions with certified trainers.</h5>
+                <p>Group Fitness Classes:</p>
+                <h5>Packages that allow access to various group fitness classes such as yoga, Zumba.</h5>
+                <p>Online Personal Training:</p>
+                <h5>We offer corporate membership programs tailored for companies looking to promote employee wellness
+                    and fitness.</h5>
+            </div>
+            <div class="offers">
+                <div class="gymgears">
+                    <h1>OFFERS</h1>
+                    <div class="img"></div>
+                    <div class="offerdetails">
+                        <div class="name">
+                            <p>Discounted rates for new members and get unlimited access to badminton, swimming, and
+                                other sports.</p>
+                            <a href="#">Free Trial</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="two">
+                    <h1>SPECIAL OFFERS</h1>
+                    <div class="img2"></div>
+                    <div class="twodetails">
+                        <div class="name2">
+                            <p>Discover our gym's exclusive offers designed to help you achieve your fitness goals
+                                affordably and effectively.</p>
+                            <a href="#">Starting at 999/Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------GALLERY------------->
+    <section id="Gallery" class="section clearfix">
+        <div class="shop-section">
+            <div class="box">
+                <div class="box-content">
+                    <h2>EliteFlex</h2>
+                    <div class="box-img" style="background-image:url('./assets/images/gears2.png');"></div>
+                    <h3>Achieve elite fitness levels with EliteFlex's expertly crafted gym essentials.</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>IronEdge</h2>
+                    <div class="box-img" style="background-image:url('./assets/images/gears.jpg');"></div>
+                    <h3>Revolutionize your fitness routine with IronEdge's advanced gym technology.</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>PowerLift</h2>
+                    <div class="box-img" style="background-image:url('./assets/images/gear4.jpg');"></div>
+                    <h3>Empower your workouts with PowerLift's durable and high-performance gym equipment.</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>MuscleMax</h2>
+                    <div class="box-img" style="background-image:url('./assets/images/equipment.jpg');"></div>
+                    <h3>Maximize your muscle gains using MuscleMax's superior quality workout gear.</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>Elite Essentials</h2>
+                    <div class="box-img" style="background-image:url('./assets/images/nutri.jpg');"></div>
+                    <h3>Elevate your health and performance with EliteEssentials's top-of-the-line nutritional support.
+                    </h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>ProNutri</h2>
+                    <div class="box-img" style="background-image:url('./assets/images/supplements.jpg');"></div>
+                    <h3>Support your professional fitness goals with ProNutri’s scientifically formulated supplements.
+                    </h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>NutriBoost</h2>
+                    <div class="box-img" style="background-image:url('./assets/images/nutrition2.jpg');"></div>
+                    <h3>Enhance your workouts with NutriBoost, providing essential nutrients for peak performance.</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>FitNourish</h2>
+                    <div class="box-img" style="background-image:url('./assets/images/nutri1.jpg');"></div>
+                    <h3>Nourish your body for peak fitness with FitNourish’s premium nutritional products.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------CONTACT---------------->
+    <section id="Contact">
+        <div class="contact">
+            <div class="queries">
+                <h2>Feel free to ask anything</h2>
+                <div class="submit">
+                    <input type="text" name="" placeholder="Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <a href="#" onclick="sentmes()">Sent Message</a>
+                </div>
+            </div>
+            <div class="map">
+                <h2>Where you can find us</h2>
+                <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Banglore,Karnataka</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.90089923568!2d77.46612624848429!3d12.953945614209811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1719248337499!5m2!1sen!2sin"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-------FOOTER----------->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 JB. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Conditions</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><i class="fa-solid fa-phone"></i><a href="#"> +910000000000</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="#"> abcd@gmail.com</a></li>
+                <li><i class="fa-brands fa-facebook" aria-hidden="true"></i><a href=#></a></li>
+                <li><i class="fa-brands fa-instagram" aria-hidden="true"></i><a href=#></a></li>
+                <li><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><a href=#></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--javascript-->
+    <script src="assets\js\main.js"></script>
+</body>
+
+</html>
